@@ -55,6 +55,8 @@ LOCAL_C_INCLUDES += \
 
 LOCAL_CFLAGS += -fvisibility=hidden
 
-
+# Disable strict aliasing here to allow
+# global use
+LOCAL_CFLAGS += -fno-strict-aliasing
 
 include $(BUILD_SHARED_LIBRARY)
